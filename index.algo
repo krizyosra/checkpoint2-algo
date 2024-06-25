@@ -1,0 +1,22 @@
+ALGORITHM insertionsort
+VAR
+    i,j,nvcard:INTEGER
+     tab: ARRAY_OF type[length];
+     
+  
+BEGIN
+   
+   FOR i FROM 1 TO tab.length-1 STEP 1 DO
+    
+     nvcard=tab[i]
+     j=i-1
+     WHILE (j>=0 and nvcard<tab[j]) DO
+      
+ swap(tab[i],tab[j]) 
+    j--
+nvcard=tab[j+1]
+      
+     END_WHILE
+  
+   END_FOR
+END
